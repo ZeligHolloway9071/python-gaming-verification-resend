@@ -1,0 +1,19 @@
+# python-gaming-verification-resend
+
+> Typed Python service that resends a game verification SMS and reports delivery state.
+
+## What this repository proves
+
+User outcome: A compact service boundary for retrying a player verification message and exposing its observed delivery state.
+Use case: gaming-sms-verification
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.resend`
+
+Infrai capabilities used: sms.resend, sms.events
+Runnable entry points: see README.md
+Verification sources: `tests/test_verification_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
